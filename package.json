@@ -1,0 +1,23 @@
+{
+  "name": "vue_proj",
+  "version": "1.0.0",
+  "description": "vue js + api ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js"
+  },
+  "author": "praboth sandaruwan",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mongodb": "^6.20.0",
+    "snappy": "^7.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
