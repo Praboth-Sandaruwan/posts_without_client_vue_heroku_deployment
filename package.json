@@ -20,7 +20,8 @@
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "mongodb": "^6.20.0",
-    "snappy": "^7.3.3"
+    "snappy": "^7.3.3",
+    "vite": "^7.1.11"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
@@ -33,6 +34,5 @@
     "node",
     "heroku",
     "express"
-  ],
-  "license": "MIT"
+  ]
 }
