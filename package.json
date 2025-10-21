@@ -1,7 +1,11 @@
 {
-  "name": "vue_proj",
+  "name": "nodejs-getting-started",
+  "private": true,
+  "description": "A sample Node.js (vue js + api)  app using Express",
+  "engines": {
+    "node": "20.x || 22.x || 24.x"
+  },
   "version": "1.0.0",
-  "description": "vue js + api ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,5 +24,15 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/nodejs-getting-started"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }
