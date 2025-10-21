@@ -37,7 +37,7 @@ export default defineConfig({
       external: ['fsevents'],
       output: {
         manualChunks: {
-          vendor: ['vue', '@vitejs/plugin-vue', 'axios'],
+          vendor: ['vue', 'axios'],
         },
       },
     },
