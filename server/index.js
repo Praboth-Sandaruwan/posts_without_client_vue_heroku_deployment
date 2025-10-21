@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require( 'body-parser');
 const cors = require('cors')
+const path = require('path')
 
 const app = express();
 
@@ -9,6 +10,8 @@ const app = express();
 app.use(bodyParser.json());
 
 app.use(cors());
+
+app.use(express.static(path.join(__dirname,'public')))  //feed the built static pages
 
 const {connMongo, mongoClient} = require('./db.js');
 
@@ -25,6 +28,11 @@ connMongo().then(() => {
 
   const posts = require('./routes/api/posts');
   app.use('/api/posts', posts);
+
+  // Fallback route for SPA (Vue)
+  app.get(*,(req,res)=>{
+    res.sendFile(path.join(__dirname,'public/index.html'))
+  })
 
   const port = process.env.PORT || 5000;
   app.listen(port, () => console.log(`Server started at port ${port}`));
